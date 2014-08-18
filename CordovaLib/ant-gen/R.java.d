@@ -1,0 +1,1 @@
+ : C:\Users\shuvankar\CordovaApp\platforms\android\CordovaLib\ant-build\AndroidManifest.xml \

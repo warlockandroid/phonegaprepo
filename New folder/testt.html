@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body >
+<h2><u>Please provide the following details</u><h2>
+
+<div class = "table_holder"  >
+
+<form name = "forms" action = "" onsubmit = "return validateForm(this)">
+<table>
+ 
+  <tr>
+    <td>Employee Id</td>
+    <td><input  type="text" name ="empId" id = "eid"></td>
+  
+  </tr>
+    <td>First Name</td>
+    <td><input  type="text" name ="fname" id = "fnm"></td>
+   
+  </tr>
+  <tr>
+    <td>Last Name</td>
+    <td><input  type="text" name ="lname" id = "lnm"></td>
+   
+  </tr>
+  <tr>
+    <td>Designation</td>
+    <td><input  type="text" name ="Designation" id = "dig"></td>
+   
+</tr>
+</table>
+
+<p><input type="submit"> <input type="reset"  value="Reset form"></p>
+</form>
+</div>
+
+
+
+<script src="validate.js">
+</script>
+
+
+<script src="dbh.js">
+</script>
+</body>
+</html>
+

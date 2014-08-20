@@ -1,0 +1,51 @@
+
+table, td, th {
+    border: 2px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 100px;
+}
+
+ div.table_holder{
+ 
+    margin-left: auto;
+    margin-right: auto;
+    width:300px
+ }
+ 
+body {
+    background-color: #b0c4de;
+}
+
+h2{
+ text-align:center;
+  color:blue;
+ 
+  
+}
+
+td{
+	font-size:medium;
+}
+
+td{
+   color:black;
+}
+
+ input{
+         padding-right: 4px;
+         padding-left: 4px;
+	 color:red;
+  }
+
+
+
+
+
+ 

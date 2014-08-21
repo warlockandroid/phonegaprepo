@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body >
+<div class ="table_holder">
+   <input name="car" list="anrede"  id ="nm" />
+   <datalist id="anrede"></datalist>
+   
+   
+
+<script type="text/javascript">
+  var mycars = new Array();
+  mycars[0]='Herr';
+  mycars[1]='Frau';
+
+  var options = '';
+
+  for(var i = 0; i < mycars.length; i++)
+    options += '<option value="'+mycars[i]+'" />';
+
+  document.getElementById('anrede').innerHTML = options;
+</script>
+
+
+<button onclick = "selectshow()" value "clikme" ></button>
+
+
+
+</div>
+
+<div class= "table_holder"><p  id="tablespace"></p></div>
+
+
+<script >
+ function selectshow(){
+ 
+    var  temp = document.getElementById("nm").value;
+     CreateTable(temp, "get", "set", "go" );
+	
+
+
+}
+
+
+function CreateTable( a, b ,c ,d)
+{
+    var tablecontents = "";
+    tablecontents = " <div  <table>";
+    for (var i = 0; i < 1; i ++)
+   {
+      tablecontents += "<tr>";
+      tablecontents += "<td>" + a+ " "+"</td>";
+	  tablecontents += "</tr>";
+	  
+	  tablecontents += "<tr>";
+      tablecontents += "<td>" + b + "  Employeee id  =  "+"</td>";
+	  tablecontents += "</tr>";
+	   
+	  tablecontents += "<tr>";
+      tablecontents += "<td>" + c +  "  is a "+ "</td>";
+      tablecontents += "</tr>";
+	  
+	  
+	  tablecontents += "<tr>";
+      tablecontents += "<td>" + d + "</td>";
+      tablecontents += "</tr>";
+   }
+   tablecontents += "</table>  </div>";
+   document.getElementById("tablespace").innerHTML = tablecontents;
+}
+
+
+
+</script>
+
+</body>
+</html>
+

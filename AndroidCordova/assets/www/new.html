@@ -1,0 +1,56 @@
+<html>
+ <head>
+
+       <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Hello World</title>
+
+
+
+<p>welcome </p>
+<script type="text/javascript" charset="utf-8">
+try{
+
+
+
+    var db = openDatabase("Databaseeee", "1.0", "PhoneGap Demo", 5000);
+	//var db = window.openDatabase({name: "DB"});
+     db.transaction(populateDB, errorCB, successCB);
+
+
+
+
+// Populate the database 
+//
+function populateDB(tx) {
+     tx.executeSql('DROP TABLE IF EXISTS DEMO');
+     tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+     tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+}
+
+// Transaction error callback
+//
+function errorCB(tx, err) {
+    alert("Error processing SQL: "+err);
+}
+
+// Transaction success callback
+//
+function successCB() {
+    alert("success!");
+}
+}catch(err){
+	alert("Error processing SQL: " + err.code);
+
+}
+
+</script>
+
+</head>
+
+</html>

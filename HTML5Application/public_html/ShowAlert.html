@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style  >
+            
+            body{
+                width: 100%;
+                height:100%;
+            }
+            #divpopupBox{
+                 position: absolute;
+                 top: 35%;
+                 left: 35%;
+                 width: 30%;
+                 height:35%;
+                 background-color: white;
+                 border-radius: 15px
+            }
+            
+            #divpopup{
+                
+                width:100%; 
+                height: 100%;  
+                background: url('img/bg.png'); 
+                position:absolute;z-index:200;
+                
+            }
+            
+            
+            
+        </style>
+        
+        
+        
+    </head>
+    <body>
+        <div style ="width:100%; height: 100%; background-color: blue;position:absolute; z-index:100">TODO writiutite content</div>
+        <div style ="" onclick="hideDiv()"  id="divpopup" >
+            <div id ="divpopupBox" onclick="changeHidestatus()"><label style="margin:30px">hello</label></div>
+            
+            <script type="text/javascript">
+            
+            var hidestatus=  true;
+            
+            function changeHidestatus(){
+                hidestatus =  false;
+            }
+            
+            function hideDiv(){
+                document.getElementById("divpopup").style.display = 'none';
+            }
+            document.getElementById('divpopupBox').addEventListner('click',function (e){
+                e.stopPropagation();
+            });
+            
+        </script>
+    </body>
+</html>

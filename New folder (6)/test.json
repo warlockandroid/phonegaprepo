@@ -1,0 +1,68 @@
+{
+  "Device Coolers": [
+    {
+      "location_id": "123,",
+      "device_id": "123,",
+      "start_time": "123,",
+      "switch_on_after": "123,",
+      "switch_on_for": "123,",
+      "switch_off_after": "123,",
+      "switch_off_for": "123,",
+      "temperature": "123,",
+      "end_time": "123,",
+      "power_consumption": "123,",
+      "number_of_units": "123"
+    },
+    {
+      "location_id": "1234,",
+      "device_id": "1234,",
+      "start_time": "1234,",
+      "switch_on_after": "1234,",
+      "switch_on_for": "1234,",
+      "switch_off_after": "1234,",
+      "switch_off_for": "1234,",
+      "temperature": "1234,",
+      "end_time": "1234,",
+      "power_consumption": "1234,",
+      "number_of_units": "1234"
+      
+      
+      
+      
+    }
+  ],
+  
+  
+  "Device Freezer": [
+    {
+      "location_id": "123,",
+      "device_id": "123,",
+      "start_time": "123,",
+      "switch_on_after": "123,",
+      "switch_on_for": "123,",
+      "switch_off_after": "123,",
+      "switch_off_for": "123,",
+      "temperature": "123,",
+      "end_time": "123,",
+      "power_consumption": "123,",
+      "number_of_units": "123"
+    },
+    {
+      "location_id": "1234,",
+      "device_id": "1234,",
+      "start_time": "1234,",
+      "switch_on_after": "1234,",
+      "switch_on_for": "1234,",
+      "switch_off_after": "1234,",
+      "switch_off_for": "1234,",
+      "temperature": "1234,",
+      "end_time": "1234,",
+      "power_consumption": "1234,",
+      "number_of_units": "1234"
+      
+      
+      
+      
+    }
+  ]
+}
